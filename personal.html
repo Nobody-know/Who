@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHO? - Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="glow-text">Hello, I'm <span class="highlight">WHO?</span></h1>
+            <p class="subtext">A Passionate Learner | Tech Enthusiast | Fitness Freak</p>
+        </div>
+    </header>
+
+    <section id="about" class="container fade-in">
+        <h2>About Me</h2>
+        <p>Welcome! I'm <b>WHO?</b>, an explorer in the fields of technology, AI, and fitness. 
+        My mission is to gain knowledge, challenge limits, and evolve continuously.</p>
+    </section>
+
+    <section id="experience" class="container fade-in">
+        <h2>Experience</h2>
+        <ul>
+            <li>🔹 Managing online communities and automation tools.</li>
+            <li>🔹 AI and emerging technology enthusiast.</li>
+            <li>🔹 Strong analytical skills in Economics and Mathematics.</li>
+            <li>🔹 Fitness and personal transformation journey.</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="container fade-in">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:instagram.6.11.10@gmail.com">instagram.6.11.10@gmail.com</a></p>
+        <p>Telegram: <a href="https://t.me/NOBODY_KNOW_BOT">@NOBODY_KNOW_BOT</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 WHO?. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const sections = document.querySelectorAll(".fade-in");
+            const options = { threshold: 0.5 };
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            }, options);
+
+            sections.forEach(section => observer.observe(section));
+        });
+    </script>
+</body>
+</html>
